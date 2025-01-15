@@ -1,0 +1,60 @@
+$ blocks
+[+] Total blocks: 1
+ [1]:
+ -  version    : bc2024
+ -  prevHash   : #
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : #
+ -  tx_cnt     : 0
+$ txs
+[+] Total txs: 0
+$ accounts
+[+] Total accounts: 0
+$ pack
+$ new_transfer -t aaa -v 1 -x 2
+$ pack
+$ blocks
+[+] Total blocks: 4
+ [1]:
+ -  version    : bc2024
+ -  prevHash   : #
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : #
+ -  tx_cnt     : 0
+ [2]:
+ -  version    : bc2024
+ -  prevHash   : P34Z3Xqbb2wwBWcw5QbNk4V3XfkD/KT1V1OwWcOs/OM=
+ -  difficulty : 10
+ -  nonce      : 1489892480
+ -  merkleRoot : jsv5a8gLMI6OiFev4mMkRbunojhf4YSd/+mu+JNr5VE=
+ -  tx_cnt     : 1
+ [3]:
+ -  version    : bc2024
+ -  prevHash   : AAJtEmjiGTb/EIGlgvL50YPzoHn7ZbB3IswqCSyuMlA=
+ -  difficulty : 10
+ -  nonce      : 441464495
+ -  merkleRoot : p6MVmwlg0kVEMFXZY0nCNY8DXT9bK2ImAqFe37NlyhA=
+ -  tx_cnt     : 1
+ [4]:
+ -  version    : bc2024
+ -  prevHash   : AAO0RWx3PTK8Wasj3BqzSA9NGegqYTM9/1Hs79rHRK8=
+ -  difficulty : 10
+ -  nonce      : 2094304178
+ -  merkleRoot : gjxQ1sPFUV5Ko6NkdtFrkCJieFzdsgFkHqzjmf9QQv4=
+ -  tx_cnt     : 3
+$ txs
+[+] Total txs: 0
+$ accounts
+[+] Total accounts: 4
+ [1]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==]:21
+ [2]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==]:7
+ [3]:
+ -  [aaa]:1
+ [4]:
+ -  [bbb]:1
+$ quit
+[*] Exiting program...

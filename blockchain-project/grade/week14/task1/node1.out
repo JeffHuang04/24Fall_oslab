@@ -1,0 +1,17 @@
+$ nodes
+[+] Total nodes: 3
+ [1]:
+ -   127.0.0.1:5002[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==]
+ [2]:
+ -   127.0.0.1:5003[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEEdwl2c/5Dns27MA4TDUijl1rnZmnkKII8QRiAthGvt/3tWxMBYjqQ4yIUiPH+3eWJrk+2vUx3El7n/JLe4d9rQ==]
+ [3]:
+ -   127.0.0.1:5004[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEWWwpLHqp/60iCtrkdUtdtHd4+lQjb6vX2OTX8Xt9VyCJNH9Xtw2Uh4nKygFTzF1bvjecX67rG1VP7t+i/M77XA==]
+$ accounts
+[+] Total accounts: 0
+$ cb_transfer -v 123 -t MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEWWwpLHqp/60iCtrkdUtdtHd4+lQjb6vX2OTX8Xt9VyCJNH9Xtw2Uh4nKygFTzF1bvjecX67rG1VP7t+i/M77XA==
+$ accounts
+[+] Total accounts: 1
+ [1]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEWWwpLHqp/60iCtrkdUtdtHd4+lQjb6vX2OTX8Xt9VyCJNH9Xtw2Uh4nKygFTzF1bvjecX67rG1VP7t+i/M77XA==]:123
+$ quit
+[*] Exiting program...

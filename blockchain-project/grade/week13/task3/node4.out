@@ -1,0 +1,11 @@
+$ txs
+[+] Total txs: 0
+$ txs
+[+] Total txs: 1
+ [1]:
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : 0
+ -  value: 1
+ -  sig  : MEYCIQDQbP+unwVubkDtNpB2HjbygwwsdRBYYI9VMgjMbY1FtgIhAPxUq6lezGH2tlf2tia/ZHf5DLTJnsZ6eXjoMqn16kNR
+$ quit
+[*] Exiting program...

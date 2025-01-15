@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+from gradelib import *
+from time import sleep
+
+stage = "week15"
+
+@test(25, "miner1")
+def test_miner1():
+    prefix = f"grade/{stage}/task1"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1"])
+    t.startup()
+    t.run([
+        [("node1", "blocks"), ("node1", "txs"), ("node1", "accounts")],
+        [("node1", "pack")],
+        [("node1", "new_transfer -t aaa -v 1")],
+        [("node1", "pack")],
+        [("node1", "blocks"), ("node1", "txs"), ("node1", "accounts")],
+    ])
+    t.shutdown()
+    # t.gen(["node1"], path=prefix)
+    t.check(["node1"], path=prefix)
+
+@test(25, "miner2")
+def test_miner2():
+    prefix = f"grade/{stage}/task2"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1"])
+    t.startup()
+    t.run([
+        [("node1", "blocks"), ("node1", "txs"), ("node1", "accounts")],
+        [("node1", "pack")],
+        [("node1", "new_transfer -t aaa -v 1 -x 1")],
+        [("node1", "new_transfer -t bbb -v 1 -x 1")],
+        [("node1", "new_transfer -t ccc -v 1 -x 1")],
+        [("node1", "new_transfer -t ddd -v 1")],
+        [("node1", "new_transfer -t eee -v 1")],
+        [("node1", "new_transfer -t fff -v 1")],
+        [("node1", "pack")],
+        [("node1", "blocks"), ("node1", "txs"), ("node1", "accounts")],
+    ])
+    t.shutdown()
+    # t.gen(["node1"], path=prefix)
+    t.check(["node1"], path=prefix)
+
+@test(25, "miner3")
+def test_miner3():
+    prefix = f"grade/{stage}/task3"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1", "node2"])
+    t.startup()
+    t.run([
+        [("node1", "blocks"), ("node1", "txs"), ("node1", "accounts"),
+         ("node2", "blocks"), ("node2", "txs"), ("node2", "accounts"),],
+        [("node1", "pack")],
+        [("node1", "new_transfer -t aaa -v 1 -x 2")],
+        [("node1", "pack")],
+        [("node1", "blocks"), ("node1", "txs"), ("node1", "accounts"),
+         ("node2", "blocks"), ("node2", "txs"), ("node2", "accounts"),],
+    ])
+    t.shutdown()
+    # t.gen(["node1", "node2"], path=prefix)
+    t.check(["node1", "node2"], path=prefix)
+
+@test(25, "miner4")
+def test_miner4():
+    prefix = f"grade/{stage}/task4"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1", "node2"])
+    t.startup()
+    t.run([
+        [("node1", "blocks"), ("node1", "txs"), ("node1", "accounts"),
+         ("node2", "blocks"), ("node2", "txs"), ("node2", "accounts"),],
+        [("node1", "pack")],
+        [("node2", "pack")],
+        [("node1", "new_transfer -t aaa -v 1 -x 2")],
+        [("node2", "new_transfer -t bbb -v 1 -x 2")],
+        [("node1", "pack")],
+        [("node1", "blocks"), ("node1", "txs"), ("node1", "accounts"),
+         ("node2", "blocks"), ("node2", "txs"), ("node2", "accounts"),],
+    ])
+    t.shutdown()
+    # t.gen(["node1", "node2"], path=prefix)
+    t.check(["node1", "node2"], path=prefix)
+
+run_tests_bc()

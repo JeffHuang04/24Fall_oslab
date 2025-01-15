@@ -1,0 +1,27 @@
+$ txs
+[+] Total txs: 0
+$ new_transfer -t 2 -v 3
+$ txs
+[+] Total txs: 4
+ [1]:
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : 1
+ -  value: 4
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiAY319KpHzdKD8+Dc4ftB2dgqMsWICaxdh5iAjY+s299A==
+ [2]:
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : 2
+ -  value: 3
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEAsazhdXXfw2mi3svFuGGEcJNQ/HGXIH+3rXwAW+uCiYM=
+ [3]:
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEEdwl2c/5Dns27MA4TDUijl1rnZmnkKII8QRiAthGvt/3tWxMBYjqQ4yIUiPH+3eWJrk+2vUx3El7n/JLe4d9rQ==
+ -  to   : 3
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiAzxL+prrQbFJFtouoqLhtXfVUK0wBytj45BpLTqFceGw==
+ [4]:
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEWWwpLHqp/60iCtrkdUtdtHd4+lQjb6vX2OTX8Xt9VyCJNH9Xtw2Uh4nKygFTzF1bvjecX67rG1VP7t+i/M77XA==
+ -  to   : 4
+ -  value: 1
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiA329gtLx8oZnVbncFJ8C4bOPzE31EtOh/aYI7zUJa3JQ==
+$ quit
+[*] Exiting program...

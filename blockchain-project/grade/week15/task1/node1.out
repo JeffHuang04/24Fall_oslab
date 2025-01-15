@@ -1,0 +1,49 @@
+$ blocks
+[+] Total blocks: 1
+ [1]:
+ -  version    : bc2024
+ -  prevHash   : #
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : #
+ -  tx_cnt     : 0
+$ txs
+[+] Total txs: 0
+$ accounts
+[+] Total accounts: 0
+$ pack
+$ new_transfer -t aaa -v 1
+$ pack
+$ blocks
+[+] Total blocks: 3
+ [1]:
+ -  version    : bc2024
+ -  prevHash   : #
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : #
+ -  tx_cnt     : 0
+ [2]:
+ -  version    : bc2024
+ -  prevHash   : P34Z3Xqbb2wwBWcw5QbNk4V3XfkD/KT1V1OwWcOs/OM=
+ -  difficulty : 10
+ -  nonce      : 1489892480
+ -  merkleRoot : jsv5a8gLMI6OiFev4mMkRbunojhf4YSd/+mu+JNr5VE=
+ -  tx_cnt     : 1
+ [3]:
+ -  version    : bc2024
+ -  prevHash   : AAJtEmjiGTb/EIGlgvL50YPzoHn7ZbB3IswqCSyuMlA=
+ -  difficulty : 10
+ -  nonce      : 1422350097
+ -  merkleRoot : h8PBhD3sTivg/4H5BH5TXfZ50cM1ywyyXkkII43ptWQ=
+ -  tx_cnt     : 2
+$ txs
+[+] Total txs: 0
+$ accounts
+[+] Total accounts: 2
+ [1]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==]:19
+ [2]:
+ -  [aaa]:1
+$ quit
+[*] Exiting program...

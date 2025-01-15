@@ -1,0 +1,114 @@
+#!/usr/bin/env python3
+from gradelib import *
+
+stage = "week14"
+
+@test(10, "test_account")
+def test_hello():
+    prefix = f"grade/{stage}/task1"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1"])
+    t.startup()
+    t.run([
+        [("node1", "nodes")],
+        [("node1", "accounts")],
+        [("node1", "cb_transfer -v 123 -t MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEWWwpLHqp/60iCtrkdUtdtHd4+lQjb6vX2OTX8Xt9VyCJNH9Xtw2Uh4nKygFTzF1bvjecX67rG1VP7t+i/M77XA==")],
+        [("node1", "accounts")],
+    ])
+    t.shutdown()
+    t.check(["node1"], path=prefix)
+
+@test(20, "test_block_gen1")
+def test_hello():
+    prefix = f"grade/{stage}/task2"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1"])
+    t.startup()
+    t.run([
+        [("node1", "nodes")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks")],
+        [("node1", "new_tx -f $ -s $ -v 123123 -t MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks")],
+        [("node1", "pack")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks")],
+    ])
+    t.shutdown()
+    t.check(["node1"], path=prefix)
+
+@test(25, "test_block_gen2")
+def test_hello():
+    prefix = f"grade/{stage}/task3"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1"])
+    t.startup()
+    t.run([
+        [("node1", "nodes")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks")],
+        [("node1", "new_tx -f $ -s $ -v 123123 -t MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==")],
+        [("node1", "new_transfer -t aaa -v 1")] * 8,
+        [("node1", "new_transfer -t bbb -v 2")] * 8,
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks")],
+        [("node1", "pack")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks")],
+        [("node1", "pack")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks")],
+    ])
+    t.shutdown()
+    t.check(["node1"], path=prefix)
+
+@test(20, "test_block_send1")
+def test_hello():
+    prefix = f"grade/{stage}/task4"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1", "node2", "node3", "node4"])
+    t.startup()
+    t.run([
+        [("node1", "nodes"), ("node2", "nodes"), ("node3", "nodes"), ("node4", "nodes")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks"), 
+         ("node2", "accounts"), ("node2", "txs"), ("node2", "blocks"), 
+         ("node3", "accounts"), ("node3", "txs"), ("node3", "blocks"), 
+         ("node4", "accounts"), ("node4", "txs"), ("node4", "blocks")],
+        [("node1", "new_tx -f $ -s $ -v 123123 -t MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks"), 
+         ("node2", "accounts"), ("node2", "txs"), ("node2", "blocks"), 
+         ("node3", "accounts"), ("node3", "txs"), ("node3", "blocks"), 
+         ("node4", "accounts"), ("node4", "txs"), ("node4", "blocks")],
+        [("node1", "pack")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks"), 
+         ("node2", "accounts"), ("node2", "txs"), ("node2", "blocks"), 
+         ("node3", "accounts"), ("node3", "txs"), ("node3", "blocks"), 
+         ("node4", "accounts"), ("node4", "txs"), ("node4", "blocks")],
+    ])
+    t.shutdown()
+    t.check(["node1", "node2", "node3", "node4"], path=prefix)
+
+@test(25, "test_block_send2")
+def test_hello():
+    prefix = f"grade/{stage}/task5"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1", "node2", "node3", "node4"])
+    t.startup()
+    t.run([
+        [("node1", "nodes"), ("node2", "nodes"), ("node3", "nodes"), ("node4", "nodes")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks"), 
+         ("node2", "accounts"), ("node2", "txs"), ("node2", "blocks"), 
+         ("node3", "accounts"), ("node3", "txs"), ("node3", "blocks"), 
+         ("node4", "accounts"), ("node4", "txs"), ("node4", "blocks")],
+        [("node1", "new_tx -f $ -s $ -v 123123 -t MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==")],
+        [("node2", "new_transfer -t aaa -v 1")] * 4,
+        [("node2", "new_transfer -t aaa -v 1")] * 4,
+        [("node1", "pack")],
+        [("node1", "accounts"), ("node1", "txs"), ("node1", "blocks"), 
+         ("node2", "accounts"), ("node2", "txs"), ("node2", "blocks"), 
+         ("node3", "accounts"), ("node3", "txs"), ("node3", "blocks"), 
+         ("node4", "accounts"), ("node4", "txs"), ("node4", "blocks")],
+    ])
+    t.shutdown()
+    t.check(["node1", "node2", "node3", "node4"], path=prefix)
+
+run_tests_bc()
