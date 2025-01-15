@@ -1,0 +1,43 @@
+$ nodes
+[+] Total nodes: 3
+ [1]:
+ -   127.0.0.1:5001[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==]
+ [2]:
+ -   127.0.0.1:5002[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==]
+ [3]:
+ -   127.0.0.1:5003[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEEdwl2c/5Dns27MA4TDUijl1rnZmnkKII8QRiAthGvt/3tWxMBYjqQ4yIUiPH+3eWJrk+2vUx3El7n/JLe4d9rQ==]
+$ accounts
+[+] Total accounts: 0
+$ txs
+[+] Total txs: 0
+$ blocks
+[+] Total blocks: 0
+$ accounts
+[+] Total accounts: 0
+$ txs
+[+] Total txs: 1
+ [1]:
+ -  id   : 89789692
+ -  from : $
+ -  to   : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  value: 123123
+ -  sig  : $
+$ blocks
+[+] Total blocks: 0
+$ accounts
+[+] Total accounts: 1
+ [1]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==]:123123
+$ txs
+[+] Total txs: 0
+$ blocks
+[+] Total blocks: 1
+ [1]:
+ -  version    : 
+ -  prevHash   : 
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : AyaQHRO9PdfiBUyLVnETs1317bCdqU0DojjEDxtksnI=
+ -  tx_cnt     : 1
+$ quit
+[*] Exiting program...

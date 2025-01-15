@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+from gradelib import *
+
+stage = "week13"
+
+@test(25, "hello")
+def test_hello():
+    prefix = f"grade/{stage}/task1"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node0", "node1", "node2", "node3", "node4"])
+    t.startup()
+    t.run([
+        [("node1", "nodes"), ("node2", "nodes"), ("node3", "nodes"), ("node4", "nodes")],
+        [("node0", "hello")],
+        [("node1", "nodes"), ("node2", "nodes"), ("node3", "nodes"), ("node4", "nodes")],
+    ])
+    t.shutdown()
+    t.check(["node1", "node2", "node3", "node4"], path=prefix)
+
+@test(25, "hello-plus")
+def test_hello_plus():
+    prefix = f"grade/{stage}/task2"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node0", "node1", "node2", "node3", "node4"])
+    t.startup()
+    t.run([
+        [("node1", "nodes"), ("node2", "nodes"), ("node3", "nodes"), ("node4", "nodes")],
+        [("node0", "hello")],
+        [("node1", "nodes"), ("node2", "nodes"), ("node3", "nodes"), ("node4", "nodes")],
+    ])
+    t.shutdown()
+    t.check(["node1", "node2", "node3", "node4"], path=prefix)
+
+@test(25, "new_tx")
+def test_new_tx():
+    prefix = f"grade/{stage}/task3"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node0", "node1", "node2", "node3", "node4"])
+    t.startup()
+    t.run([
+        [("node1", "txs"), ("node2", "txs"), ("node3", "txs"), ("node4", "txs")],
+        [("node0", "new_tx -f MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ== -t 0 -v 1 -s MEYCIQDQbP+unwVubkDtNpB2HjbygwwsdRBYYI9VMgjMbY1FtgIhAPxUq6lezGH2tlf2tia/ZHf5DLTJnsZ6eXjoMqn16kNR")],
+        [("node0", "new_tx -f bad_pub -t 0 -v 1 -s MEYCIQDQbP+unwVubkDtNpB2HjbygwwsdRBYYI9VMgjMbY1FtgIhAPxUq6lezGH2tlf2tia/ZHf5DLTJnsZ6eXjoMqn16kNR")],
+        [("node0", "new_tx -f MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ== -t 0 -v 1 -s bad_sig")],
+        [("node1", "txs"), ("node2", "txs"), ("node3", "txs"), ("node4", "txs")],
+    ])
+    t.shutdown()
+    t.check(["node1", "node2", "node3", "node4"], path=prefix)
+
+@test(25, "new_transfer")
+def test_new_transfer():
+    prefix = f"grade/{stage}/task4"
+
+    config_fresh(f"{prefix}")
+    t = MultiProcessesTester(["node1", "node2", "node3", "node4"])
+    t.startup()
+    t.run([
+        [("node1", "txs"), ("node2", "txs"), ("node3", "txs"), ("node4", "txs")],
+        [("node1", "new_transfer -t 1 -v 4")],
+        [("node2", "new_transfer -t 2 -v 3")],
+        [("node3", "new_transfer -t 3 -v 2")],
+        [("node4", "new_transfer -t 4 -v 1")],
+        [("node1", "txs"), ("node2", "txs"), ("node3", "txs"), ("node4", "txs")],
+    ])
+    t.shutdown()
+    t.check(["node1", "node2", "node3", "node4"], path=prefix)
+
+run_tests_bc()

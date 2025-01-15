@@ -1,0 +1,12 @@
+
+Hello from OS!
+$ echo hello world
+hello world
+$ add 114 514 1919 810
+3357
+$ sleep 10
+$ noshuchfile
+sh: exec failed.
+$ echo OK
+OK
+$ qemu-system-i386: terminating on signal 15 from pid 7554 (make)

@@ -1,0 +1,24 @@
+{
+    "name": "week13",
+    "endpoint": "week13",
+    "src": [
+        "src/cmd.c",
+        "src/main.c",
+        "src/node.c",
+        "src/protocol.c",
+        "src/tx.c",
+        "src/utils.c",
+        "include/cmd.h",
+        "include/node.h",
+        "include/protocol.h",
+        "include/tx.h",
+        "include/utils.h"
+    ],
+    "tests": {},
+    "protocols": [
+        "file_contents",
+        "analytics",
+        "grading",
+        "backup"
+    ]
+}

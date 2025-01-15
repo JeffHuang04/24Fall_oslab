@@ -1,0 +1,194 @@
+$ nodes
+[+] Total nodes: 3
+ [1]:
+ -   127.0.0.1:5002[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==]
+ [2]:
+ -   127.0.0.1:5003[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEEdwl2c/5Dns27MA4TDUijl1rnZmnkKII8QRiAthGvt/3tWxMBYjqQ4yIUiPH+3eWJrk+2vUx3El7n/JLe4d9rQ==]
+ [3]:
+ -   127.0.0.1:5004[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEWWwpLHqp/60iCtrkdUtdtHd4+lQjb6vX2OTX8Xt9VyCJNH9Xtw2Uh4nKygFTzF1bvjecX67rG1VP7t+i/M77XA==]
+$ accounts
+[+] Total accounts: 0
+$ txs
+[+] Total txs: 0
+$ blocks
+[+] Total blocks: 0
+$ new_tx -f $ -s $ -v 123123 -t MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ accounts
+[+] Total accounts: 0
+$ txs
+[+] Total txs: 17
+ [1]:
+ -  id   : 89789692
+ -  from : $
+ -  to   : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  value: 123123
+ -  sig  : $
+ [2]:
+ -  id   : 472527429
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEApyxPHgaipOSubz/AUkaqSo8oNPmlzjGZagwdoNBX79s=
+ [3]:
+ -  id   : 662972923
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEArtTdDv45mntrHUsL7uWiKl9HbxbAsGZBErFdlGbT0Xc=
+ [4]:
+ -  id   : 349935196
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiB0PNT3wIadQKPo8XoIQwQp2q6VQshPTIrtPEh9HTRNIA==
+ [5]:
+ -  id   : 1595067573
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEA/M+R+nWcAeKcTfHT0EpvMYw1gMkeglGc5ywgLP0EgbE=
+ [6]:
+ -  id   : 634019950
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiAfQuLHuNqxS8wqiO5UfjdfZU1C0cWQwcdIi45Poy7RJQ==
+ [7]:
+ -  id   : 1424730350
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEA1RTj5lrYRla7UTIO9OIqqpLki4iKKSmUviJO9U0yp4w=
+ [8]:
+ -  id   : 1990319696
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiBLPZK2yIG5kdB6znSxDyLlCvWuRetRArzG82RVR1mHmg==
+ [9]:
+ -  id   : 943152594
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiA8c9ZuYRjk1EXfL3u/QCXtHbiNw9sLvzIYQk9o01GBpA==
+ [10]:
+ -  id   : 1325885053
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiA+MijNJmMF+cPVbrXX2YBtWEkyn/JPJf41uIgrW42JqQ==
+ [11]:
+ -  id   : 1995026802
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiASdP7Q6DpLO526MDMHMvVpTyfL+Fhos8r0kiaitSRgSg==
+ [12]:
+ -  id   : 1927242151
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiAeqC6+bdWdlb+yqPdswNOqdCZnUIy6JEfKA3LJnDtrTQ==
+ [13]:
+ -  id   : 1346208459
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiB2Ay1IsvprSf0Ms5X87uJi5eehWP/r6ivLrih4U6VE2Q==
+ [14]:
+ -  id   : 2138060735
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiB24VshJrppq2n1PHRevAEOsCTvUfL23Xh9NEFxX3iQ0Q==
+ [15]:
+ -  id   : 1173291550
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiALgzqsk/XtfoxBSZuVRpj2lEBqKyX+DQWs2FPQyfOTvQ==
+ [16]:
+ -  id   : 2100334873
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiBh72hJNeBGR4SXWFTFK78DAE1H55X0xkJZZNxFf63iBQ==
+ [17]:
+ -  id   : 1825686632
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiBsNFzFJKz8GeWzrTX6QX1yJF4CzXcyygl3ymz8kLS40A==
+$ blocks
+[+] Total blocks: 0
+$ pack
+$ accounts
+[+] Total accounts: 3
+ [1]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==]:123101
+ [2]:
+ -  [aaa]:8
+ [3]:
+ -  [bbb]:14
+$ txs
+[+] Total txs: 1
+ [1]:
+ -  id   : 1825686632
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiBsNFzFJKz8GeWzrTX6QX1yJF4CzXcyygl3ymz8kLS40A==
+$ blocks
+[+] Total blocks: 1
+ [1]:
+ -  version    : 
+ -  prevHash   : 
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : 7YP3LndGkeGRHlG2TUfEPJa26szDO5pu5At8H9QKwbs=
+ -  tx_cnt     : 16
+$ pack
+$ accounts
+[+] Total accounts: 3
+ [1]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==]:123099
+ [2]:
+ -  [aaa]:8
+ [3]:
+ -  [bbb]:16
+$ txs
+[+] Total txs: 0
+$ blocks
+[+] Total blocks: 2
+ [1]:
+ -  version    : 
+ -  prevHash   : 
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : 7YP3LndGkeGRHlG2TUfEPJa26szDO5pu5At8H9QKwbs=
+ -  tx_cnt     : 16
+ [2]:
+ -  version    : 
+ -  prevHash   : 
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : +j0xvcsVkHXpNZWZsj0Q+Lm/TY9XlGCtbOhnD344+7k=
+ -  tx_cnt     : 1
+$ quit
+[*] Exiting program...

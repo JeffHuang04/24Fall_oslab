@@ -1,0 +1,28 @@
+{
+    "name": "week14",
+    "endpoint": "week14",
+    "src": [
+        "src/cmd.c",
+        "src/main.c",
+        "src/node.c",
+        "src/protocol.c",
+        "src/tx.c",
+        "src/utils.c",
+        "src/account.c",
+        "src/block.c",
+        "include/cmd.h",
+        "include/node.h",
+        "include/protocol.h",
+        "include/tx.h",
+        "include/utils.h",
+        "include/account.h",
+        "include/block.h"
+    ],
+    "tests": {},
+    "protocols": [
+        "file_contents",
+        "analytics",
+        "grading",
+        "backup"
+    ]
+}

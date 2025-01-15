@@ -1,0 +1,191 @@
+$ nodes
+[+] Total nodes: 3
+ [1]:
+ -   127.0.0.1:5001[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEhTb7qM/488O9QYb6K/WFF0f4+5fKTE+sXDN6SjTQwXj2f3APuhtms38O4pYocQLnMVqorSVueKY/cnmvX98bTQ==]
+ [2]:
+ -   127.0.0.1:5003[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEEdwl2c/5Dns27MA4TDUijl1rnZmnkKII8QRiAthGvt/3tWxMBYjqQ4yIUiPH+3eWJrk+2vUx3El7n/JLe4d9rQ==]
+ [3]:
+ -   127.0.0.1:5004[MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEWWwpLHqp/60iCtrkdUtdtHd4+lQjb6vX2OTX8Xt9VyCJNH9Xtw2Uh4nKygFTzF1bvjecX67rG1VP7t+i/M77XA==]
+$ accounts
+[+] Total accounts: 0
+$ txs
+[+] Total txs: 0
+$ blocks
+[+] Total blocks: 0
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t aaa -v 1
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ new_transfer -t bbb -v 2
+$ accounts
+[+] Total accounts: 0
+$ txs
+[+] Total txs: 17
+ [1]:
+ -  id   : 89789692
+ -  from : $
+ -  to   : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  value: 123123
+ -  sig  : $
+ [2]:
+ -  id   : 1920540202
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiA3noJFmypbS1y4jiLkz0CMMVQXB0JkgXwO+hy3LNSH3w==
+ [3]:
+ -  id   : 1350000510
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEA2NBr9Uwor/7nSVzkOlqlhAXfOi+pRwmlGrl45yN21QI=
+ [4]:
+ -  id   : 223544838
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEA8Sj8smk4U+m4zHx3I2qFKyD9Kgv7YSJEsQS0bRd15kc=
+ [5]:
+ -  id   : 2095625645
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEAullH7MI4/p8/zaWObF5iOpMIYnaLjE5kvm5fYCFNN/Y=
+ [6]:
+ -  id   : 1441971383
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEAu924zXHOxWpNPVapzlAELxbgq4Glf1W13npMt4WR1Kc=
+ [7]:
+ -  id   : 1090072283
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEA08YHGOkFIiiHiX77B/YjK7xpYaofrcX54jP2wIRUu98=
+ [8]:
+ -  id   : 33591551
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEAr6HOvcIVVQdOG2pEAj25oiQ9oizmSaWKNNZ/yK+ugHs=
+ [9]:
+ -  id   : 462713693
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : aaa
+ -  value: 1
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEA7MJAwy40XVXgHeJ2N9812riDUs8smUcVEuyjOOvfejc=
+ [10]:
+ -  id   : 504377689
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiADBbzQWYJCO6uNV8ZJOzn0KsOEKUm67GWtDElzaGwVPg==
+ [11]:
+ -  id   : 410880882
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiBfP+ikdC4wSP4yT7PsVl24eRQm73pYxA7Gx7lPJfK38Q==
+ [12]:
+ -  id   : 925134473
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEAhDQFc2wqtgOhK40qQPaA0keTWuyIzrhvlfgvXhgrTBw=
+ [13]:
+ -  id   : 1176772723
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiAsbeMgG3n/sY1Xa5j2z1B3LJtNzo5fhVa9SBvpIB670A==
+ [14]:
+ -  id   : 32477045
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiBRJDd98zIPrcAXjRVBWkGhdsrDbXit0BjMCVd639L3Tg==
+ [15]:
+ -  id   : 81804573
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEUCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiEAhIiEpqoMTuTf43BTYF1V6ldIDjyPkiUOkWRwKAPGW6g=
+ [16]:
+ -  id   : 53301294
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiAwU/u+STFoo5ye21G2Z4i9RM3XO2qRcsjOwigqZ+ulag==
+ [17]:
+ -  id   : 1979698598
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiB3mU9pTrjMIWZqaQz2kNNpcr70ja1RStVJlAOU0vgyvA==
+$ blocks
+[+] Total blocks: 0
+$ accounts
+[+] Total accounts: 3
+ [1]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==]:123101
+ [2]:
+ -  [aaa]:8
+ [3]:
+ -  [bbb]:14
+$ txs
+[+] Total txs: 1
+ [1]:
+ -  id   : 1979698598
+ -  from : MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==
+ -  to   : bbb
+ -  value: 2
+ -  sig  : MEQCIHm+Zn753LusVaBilc6HCwcCm/zbLc4o2VnygVsW+BeYAiB3mU9pTrjMIWZqaQz2kNNpcr70ja1RStVJlAOU0vgyvA==
+$ blocks
+[+] Total blocks: 1
+ [1]:
+ -  version    : 
+ -  prevHash   : 
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : N9gyl2nlK/Q7rQa7+plV0qA8Hw2e2eNehloqr9Fd3l0=
+ -  tx_cnt     : 16
+$ accounts
+[+] Total accounts: 3
+ [1]:
+ -  [MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE6+9ZUuXtyypiN63IexIiGWKshDufswSOwHcjTEg93GKFQvuG5AE7RlliCyE7j3CPkGUWUXU5wgL8K5VKA4FSvQ==]:123099
+ [2]:
+ -  [aaa]:8
+ [3]:
+ -  [bbb]:16
+$ txs
+[+] Total txs: 0
+$ blocks
+[+] Total blocks: 2
+ [1]:
+ -  version    : 
+ -  prevHash   : 
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : N9gyl2nlK/Q7rQa7+plV0qA8Hw2e2eNehloqr9Fd3l0=
+ -  tx_cnt     : 16
+ [2]:
+ -  version    : 
+ -  prevHash   : 
+ -  difficulty : 0
+ -  nonce      : 0
+ -  merkleRoot : ogs2DpwfjFcje3ptyf5c2uFb/qoV0csyERcnsNWKduc=
+ -  tx_cnt     : 1
+$ quit
+[*] Exiting program...
